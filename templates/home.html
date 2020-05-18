@@ -1,0 +1,37 @@
+{% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Guilherme Moraes">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="container-titulo">
+                <div class="titulo">
+                    <h1>Pokemão</h1>
+                </div>
+            </div>
+        </header>
+        <section class="container-poke-imagem">
+            <div class="poke1">
+                <p class="imagem-pokemon">Pokemão.jpg</p>
+            </div>
+                <div class="poke2">
+                <p class="imagem-pokemon">Pokemão.jpg</p>
+            </div>
+            <div class="poke3">
+                <p class="imagem-pokemon">Pokemão.jpg</p>
+            </div>
+        </section>
+    <form class="pesquisa">
+        <input type="search" id="texto" list="pokemons" placeholder="Digite o pokemon aqui">
+        <datalist id="pokemons">
+        </datalist>
+    </form>
+    </body>
+    <footer></footer>
+    </html>
