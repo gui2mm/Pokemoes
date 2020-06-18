@@ -24,7 +24,7 @@ SECRET_KEY = '7n(!a3n1q8lf=k1^7th@cu30fslb-s=&yxs&)^st)$tw@ca#p5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.56.101", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["192.168.56.101", "127.0.0.1", "localhost","192.168.1.124"]
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'pokemon_site_config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,3 +122,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static'),
 )
+
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = 'accounts/login'

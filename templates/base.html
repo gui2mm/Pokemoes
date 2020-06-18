@@ -1,0 +1,23 @@
+{% load static %}
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Guilherme Moraes">
+        <title>Pokemões</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="container-titulo">
+                <div class="titulo">
+                    <h1>Pokemão</h1>
+                </div>
+            </div>
+        </header>
+    {% block content %}{% endblock %}
+    </body>
+    <footer>
+    </footer>
+    </html>
